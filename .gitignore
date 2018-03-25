@@ -1,8 +1,8 @@
 app/node_modules
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+app/npm-debug.log*
+app/yarn-debug.log*
+app/yarn-error.log*
 
 public/app.js
 public/app.js.map

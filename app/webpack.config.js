@@ -13,6 +13,7 @@ module.exports = {
     extensions: ['.js', '.jsx'],
     alias: {
       components: path.resolve(__dirname, './src/components'),
+      stores: path.resolve(__dirname, './src/stores'),
       mock: path.resolve(__dirname, './src/mock'),
     }
   },
@@ -24,7 +25,8 @@ module.exports = {
       exclude: /node_modules/,
       loader: 'babel-loader',
       query: {
-        presets: ['env', 'react', 'stage-2']
+        presets: ['env', 'react', 'stage-2'],
+        plugins: ["transform-decorators-legacy", "transform-class-properties"]
       }
     },
     {
